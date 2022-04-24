@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Aquariam</title>
+    <title>MOSCOW</title>
     <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -49,11 +49,17 @@
                                     <li><a href="">Contact</a></li>
                                 </ul>
                             </nav>
+                            <div class="Nav-social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-twitter-square"></i>
+                                <i class="fa-brands fa-instagram-square"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div>
+                    <div class="penthouseButton">
                         <button>Choose Penthouse</button>
                         <i class="fa-regular fa-heart"></i>
                     </div>
@@ -65,17 +71,19 @@
                 </div>
 
                 <div class="col-4">
-                    <div class="flex-box">
+                   <div class="call-box">
+                    <div class="flex-box ">
                         <div class="phoneNumb ">
                             <p>+7 499 322 16 67</p>
                         </div>
-                        <div>
+                        <div class="call">
                             <div class="round">
 
                             </div>
                             <p>Request a Call</p>
                         </div>
                     </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -356,17 +364,17 @@
                                     <li>3</li>
                                     <li>4</li>
                                 </div>
-                                <div class="price-finishing">
-                                    <label for="customRange3" class="form-label">Price : 50 - 80 (Million)</label>
-                                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                                <div class="price-finishing" title="Drug it to setup your Requirement">
+                                    <label for="customRange3" class="form-label" >Price : 50 - 80 (Million)</label>
+                                <input type="range" class="form-range" value="75" min="0" max="100" step="0.5" id="customRange3">
                                 </div>
-                                <div class="size describe">
-                                    <label for="customRange1" class="form-label">Size: 70-165M<sup>2</sup></label>
-                                    <input type="range" class="form-range" id="customRange1">
+                                <div class="size describe" title="Drug it to setup your Requirement">
+                                    <label for="customRange1" class="form-label" >Size: 70-165M<sup>2</sup></label>
+                                    <input type="range" class="form-range" value="40" min="0" max="100" step="0.5" id="customRange3">
                                 </div>
-                                <div class="Floor describe">
-                                    <label for="customRange1" class="form-label">Floor: 07-32</label>
-                                    <input type="range" class="form-range" id="customRange1">
+                                <div class="Floor describe" title="Drug it to setup your Requirement">
+                                    <label for="customRange1" class="form-label" >Floor: 07-32</label>
+                                    <input type="range" class="form-range" value="55" min="0" max="100" step="0.5" id="customRange3">
                                 </div>
                             </div>
                             <div>
@@ -426,10 +434,13 @@
 
 
 
-
-
-
-
+        <footer class="footer">
+            <div class="container">
+                <div class="text-center">
+                    <p>&copy; Copyright 2022 | all deserved by Domain name</p>
+                </div>
+            </div>
+        </footer>
 
 
 
@@ -445,14 +456,13 @@
         integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="owl.carousel.min.js"></script>
+    <!-- <script src="owl.carousel.min.js"></script>
     <script src="wow.min.js"></script>
-    <script src="3d/app.js"></script>
-    <script src="Custom.js"></script>
+    <script src="3d/app.js"></script> -->
+    <!-- <script src="Custom.js"></script> -->
     <script>
 
-        new WOW().init();
-
+        
 
 
         // $('.owl-carousel').owlCarousel({
@@ -473,32 +483,35 @@
         // })
 
 
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 5,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [1000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
+        // var owl = $('.owl-carousel');
+        // owl.owlCarousel({
+        //     items: 5,
+        //     loop: true,
+        //     margin: 10,
+        //     autoplay: true,
+        //     autoplayTimeout: 1000,
+        //     autoplayHoverPause: true
+        // });
+        // $('.play').on('click', function () {
+        //     owl.trigger('play.owl.autoplay', [1000])
+        // })
+        // $('.stop').on('click', function () {
+        //     owl.trigger('stop.owl.autoplay')
 
-        })
+        // })
 
 
+    
 
 
         $(".menu-icon img").click(function(){
-            $(".menu").show();
+            $(".menu").show(400);
         });
-        $(".top-area .navigation .menu").click(function(){
-            alert("working now")
+
+        $(".menu .close").click(function(){
+            $(".navigation .menu").hide(400);
         })
+      
 
 
     </script>

@@ -42,6 +42,7 @@ $secondary:rgba(242, 242, 242, 0.867);
 .top-area{
     background-color: $secondary;
     padding: 20px 0;
+    text-align: center;
 }
 .top-area button:hover{
     background-color: $primary;
@@ -55,6 +56,23 @@ $secondary:rgba(242, 242, 242, 0.867);
    -ms-border-radius: 15px;
    -o-border-radius: 15px;
    padding: 3px 8px;
+}
+
+.top-area .fa-heart{
+    font-size: 22px;
+    padding: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.top-area .fa-heart:hover{
+   background-color: $primary;
+   color: white;
+   font-weight: 700;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
 }
 .top-area i{
     color: $primary;
@@ -91,10 +109,26 @@ $secondary:rgba(242, 242, 242, 0.867);
     padding: 20px;
     margin: 50px 0;
 }
-.top-area nav ul{}
+.top-area nav ul{
+    text-align: left;
+}
+.top-area .menu{
+    position: relative;
+}
+
+.top-area .menu .Nav-social{
+    width: 80%;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    justify-content: space-between;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
 .top-area nav ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 12px 0;
 }
 .top-area nav ul li a{
     color: white;
@@ -122,6 +156,35 @@ $secondary:rgba(242, 242, 242, 0.867);
     font-size: 25px;
     cursor: pointer;
 }
+
+
+
+.top-area .call-box{
+  cursor: pointer;
+}
+
+.top-area .phoneNumb{
+    width: 50%;
+}
+.top-area .row .call{
+   font-weight: 600;
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    display: flex;
+}
+.top-area .call-box .call .round{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    border: 7px solid $primary;
+}
+
 
 
 
@@ -703,4 +766,26 @@ $secondary:rgba(242, 242, 242, 0.867);
    -moz-transition: .7s;
    -ms-transition: .7s;
    -o-transition: .7s;
+}
+
+
+
+@mixin BorderRadius{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+
+
+
+
+
+.footer{
+    padding: 25px 0;
+    background-color: $secondary;
+    margin-top: 25px;
 }

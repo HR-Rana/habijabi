@@ -17,6 +17,7 @@ body {
 .top-area {
   background-color: rgba(242, 242, 242, 0.867);
   padding: 20px 0;
+  text-align: center;
 }
 
 .top-area button:hover {
@@ -32,6 +33,24 @@ body {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   padding: 3px 8px;
+}
+
+.top-area .fa-heart {
+  font-size: 22px;
+  padding: 3px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.top-area .fa-heart:hover {
+  background-color: #0563c1;
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .top-area i {
@@ -71,9 +90,30 @@ body {
   margin: 50px 0;
 }
 
+.top-area nav ul {
+  text-align: left;
+}
+
+.top-area .menu {
+  position: relative;
+}
+
+.top-area .menu .Nav-social {
+  width: 80%;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 .top-area nav ul li {
   list-style: none;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .top-area nav ul li a {
@@ -106,6 +146,35 @@ body {
   color: white;
   font-size: 25px;
   cursor: pointer;
+}
+
+.top-area .call-box {
+  cursor: pointer;
+}
+
+.top-area .phoneNumb {
+  width: 50%;
+}
+
+.top-area .row .call {
+  font-weight: 600;
+  width: 50%;
+  float: right;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-area .call-box .call .round {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 7px solid #0563c1;
 }
 
 .banner-area {
@@ -673,5 +742,11 @@ body {
   -moz-transition: .7s;
   -ms-transition: .7s;
   -o-transition: .7s;
+}
+
+.footer {
+  padding: 25px 0;
+  background-color: rgba(242, 242, 242, 0.867);
+  margin-top: 25px;
 }
 /*# sourceMappingURL=style.css.map */
